@@ -10,9 +10,9 @@ Its best to use a Dockerfile supplied in the code (under folder `mpi_tutorial`) 
 Some helpful tips are as follows:
 1. Build the container image using the command `docker build . -t mpi_docker_image:latest`. Ensure you are in the current directory (same as Dockerfile)  before you execute this command.
 2. Run the built container image using `docker run -v <midterm_directory_path_on_host>:/home/midterm/ -d mpi_docker_image:latest`. There are are many benefits to doing this:
-   - This will map all files on your host present inside the directory `<midterm_directory_path_on_host>` to the folder `</home/midterm>`. 
+   - This will map all files on your host present inside the directory `<midterm_directory_path_on_host>` to the folder `</home/midterm>` on the container. 
    - This will allow you to live edit your code files inside the midterm_directory and have the changes instantly reflected inside the container image on `/home/midterm`.
-   - Whenever you want to test/debug your midterm code for any question, simpley make edits on your host and run using mpi on the container to test.
+   - Whenever you want to test/debug your midterm code for any question, simply make edits on your host and run using mpi on the container to test.
    - This means you can keep using your favorite IDE such as PyCharm or VSCode without really worrying about installing MPI on your local computer.
 3. You would need to run code using MPI inside the container. Instructions for running MPI are given below.
 No points will be taken off for not using docker container image. This is just for your convenience. If you prefer, you can run this code on the Pete supercomputer or on any other machine that has MPI available.
