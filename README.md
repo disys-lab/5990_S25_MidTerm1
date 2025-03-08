@@ -1,6 +1,6 @@
 # Assignment: Blockchain Transactions and Merkle Trees with MPI
 
-## **Objective**
+## Objective
 This assignment focuses on implementing and extending blockchain transaction validation using **Merkle Trees**, **Unspent Transaction Output (UTXO) models**, and **MPI for distributed consensus**. 
 You will complete missing functionality and answer conceptual questions.
 ---
