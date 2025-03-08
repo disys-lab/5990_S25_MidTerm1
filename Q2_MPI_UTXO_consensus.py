@@ -47,17 +47,6 @@ class LedgerHandler:
 
             self.add_new_unspent_txns(tx_id,tx_data)
 
-    def calculate_net_unspent_value(self,wallet_id):
-        """TODO: Implement logic to calculate total unspent value and the unspent transactions in a given wallet_id"""
-        total_value = 0
-        unspent_tx_ids = []
-
-        return total_value,unspent_tx_ids
-
-    def eliminate_previous_unspent_txns(self,unspent_tx_ids):
-        """TODO: Implement logic for eliminating previously unspent transactions. Hint: You can use self.unspent_txns[tx_id] and delete transactions that have been spent."""
-        pass
-
     def add_new_unspent_txns(self,tx_id,tx_data):
         self.unspent_txns[tx_id] = tx_data
 
@@ -77,6 +66,19 @@ class LedgerHandler:
             txn_list.append(txn)
 
         return txn_list
+
+    def calculate_net_unspent_value(self,wallet_id):
+        """TODO: Implement logic to calculate total unspent value and the unspent transactions in a given wallet_id"""
+        """You can iterate over all transactions in self.unspent_txns, and calculate the sum of all transactions where the "to" field is listed as wallet_id"""
+        total_value = 0
+        unspent_tx_ids = []
+
+        return total_value,unspent_tx_ids
+
+    def eliminate_previous_unspent_txns(self,unspent_tx_ids):
+        """TODO: Implement logic for eliminating previously unspent transactions. Hint: You can use self.unspent_txns[tx_id] and delete transactions that have been spent."""
+        """deleting keys of a dictionary can be done using del or pop operations."""
+        pass
 
     def process_transaction(self, txn_list, rank, epoch):
 
