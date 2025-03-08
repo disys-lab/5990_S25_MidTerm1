@@ -111,7 +111,7 @@ The Unspent Transaction Output (UTXO) model ensures that transactions are based 
 
 ### **Example Execution:**
 ```bash
-mpirun -n 4 python Q3_MPI_MerkleTree_consensus.py NUM_EPOCHS NUM_WALLETS TXNS_PER_EPOCH
+mpirun -n <NUM_MINERS> python Q3_MPI_MerkleTree_consensus.py NUM_EPOCHS NUM_WALLETS TXNS_PER_EPOCH
 ```
 
 ### **Example Output:**
