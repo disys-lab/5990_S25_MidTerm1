@@ -140,10 +140,15 @@ In `Q3_MPI_MerkleTree_consensus.py`, transactions are grouped into blocks. Each 
 3. Run the program using MPI and analyze how transactions are propagated across different nodes. 
 
 
-## **Bonus Question: Simulating asynchronous computation over MPI**
+## **[20 points] Bonus Question: Simulating asynchronous computation over MPI**
+
+### **Task:**
 Edit `Q3_MPI_MerkleTree_consensus.py` to include an asynchronous computation model. You can use non-blocking operations like [`irecv`](https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Comm.html#mpi4py.MPI.Comm.irecv) and [`isend`](https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Comm.html#mpi4py.MPI.Comm.isend)
 You can also use other ways to accomplish asynchronous communication such as simulating a dummy transaction with a probability.
 Once youre done accomplishing asynchrnous communication, evaluate the strength of the given consensus protocol and provide details on how this can be made more resilient.
+
+
+
 ---
 
 ## **Submission Guidelines**
